@@ -41,7 +41,7 @@ M.options = {
       icon = wez.nerdfonts.fa_user,
       color = 6,
     },
-    hostname = {
+    domain = {
       enabled = true,
       icon = wez.nerdfonts.cod_server,
       color = 8,
