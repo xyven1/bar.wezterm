@@ -163,9 +163,10 @@ wez.on("update-status", function(window, pane)
       end,
     },
     {
-      name = "hostname",
+      name = "domain",
       func = function()
-        return wez.hostname()
+        local domain = window:active_tab():active_pane():get_domain_name()
+        return domain == "local" and '' or domain
       end,
     },
     {
