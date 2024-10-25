@@ -163,13 +163,6 @@ wez.on("update-status", function(window, pane)
       end,
     },
     {
-      name = "domain",
-      func = function()
-        local domain = window:active_tab():active_pane():get_domain_name()
-        return domain == "local" and '' or domain
-      end,
-    },
-    {
       name = "clock",
       func = function()
         return wez.time.now():format "%H:%M"
@@ -179,6 +172,13 @@ wez.on("update-status", function(window, pane)
       name = "cwd",
       func = function()
         return paths.get_cwd(pane, true)
+      end,
+    },
+    {
+      name = "domain",
+      func = function()
+        local domain = window:active_tab():active_pane():get_domain_name()
+        return domain == "local" and '' or domain
       end,
     },
   }
