@@ -14,8 +14,8 @@ end
 
 --- Returns the name of the package, used when requiring modules
 local function get_require_path()
-  local path = "httpssCssZssZsgithubsDscomsZsxyvensZsbarsDswezterm"
-  local path_trailing_slash = "httpssCssZssZsgithubsDscomsZsxyvensZsbarsDsweztermsZs"
+  local path = "httpssCssZssZsgithubsDscomsZsxyven1sZsbarsDswezterm"
+  local path_trailing_slash = "httpssCssZssZsgithubsDscomsZsxyven1sZsbarsDsweztermsZs"
   return directory_exists(path_trailing_slash) and path_trailing_slash or path
 end
 
